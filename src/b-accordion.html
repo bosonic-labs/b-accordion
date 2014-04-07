@@ -1,0 +1,25 @@
+<element name="b-accordion" extends="b-selectable">
+    <style>
+        
+    </style>
+    <template></template>
+    <script>
+        ({
+            clickHandler: function (e) {
+                e.stopPropagation();
+                if (e.target.nodeName !== 'B-COLLAPSIBLE') {
+                    e = { target: e.target.parentElement };
+                }
+                this._super.clickHandler.call(this, e);
+            },
+
+            selectedChanged: function (oldValue, newValue) {
+                this._super.selectedChanged.call(this, oldValue, newValue);
+                if (oldValue !== null) {
+                    this.getItem(oldValue).removeAttribute('active');
+                }
+                this.getItem(newValue).setAttribute('active', '');
+            }
+        });
+    </script>
+</element>

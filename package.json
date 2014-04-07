@@ -1,0 +1,27 @@
+{
+  "name": "b-accordion",
+  "version": "0.2.0",
+  "description": "b-accordion ========",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bosonic/b-accordion.git"
+  },
+  "author": "Raphaël Rougeron <goldoraf@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bosonic/b-accordion/issues"
+  },
+  "devDependencies": {
+    "bosonic-test-tools": "*",
+    "grunt-bosonic": ">=0.4.0",
+    "b-collapsible": ">=0.2.2",
+    "b-selectable": ">=0.2.1"
+  },
+  "dependencies": {
+    "bosonic": ">=0.4.0"
+  }
+}
