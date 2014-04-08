@@ -1,7 +1,7 @@
 {
   "name": "b-accordion",
   "version": "0.2.0",
-  "description": "b-accordion ========",
+  "description": "A Bosonic accordion element.",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,7 @@
     "bosonic-test-tools": "*",
     "grunt-bosonic": ">=0.4.0",
     "b-collapsible": ">=0.2.2",
-    "b-selectable": ">=0.2.1"
+    "b-selectable": ">=0.2.4"
   },
   "dependencies": {
     "bosonic": ">=0.4.0"
