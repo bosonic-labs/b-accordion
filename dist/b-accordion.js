@@ -29,16 +29,18 @@
             selectedChanged: {
                 enumerable: true,
                 value: function (oldValue, newValue) {
-                    var oldItem = this.getItem(oldValue), newItem = this.getItem(newValue);
                     this._super.selectedChanged.call(this, oldValue, newValue);
-                    if (oldValue !== null) {
+                    var oldItem = this.getItem(oldValue), newItem = this.getItem(newValue);
+                    if (oldItem !== null) {
                         oldItem.removeAttribute('active');
                         oldItem.setAttribute('aria-expanded', 'false');
                         oldItem.setAttribute('aria-hidden', 'true');
                     }
-                    newItem.setAttribute('active', '');
-                    newItem.setAttribute('aria-expanded', 'true');
-                    newItem.setAttribute('aria-hidden', 'false');
+                    if (newItem !== null) {
+                        newItem.setAttribute('active', '');
+                        newItem.setAttribute('aria-expanded', 'true');
+                        newItem.setAttribute('aria-hidden', 'false');
+                    }
                 }
             }
         });
