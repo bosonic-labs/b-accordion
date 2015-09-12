@@ -1,7 +1,7 @@
 {
   "name": "b-accordion",
-  "version": "0.2.1",
-  "description": "A Bosonic accordion element.",
+  "version": "0.2.2",
+  "description": "b-accordion has been deprecated. Use bosonic-data-elements instead.",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,11 +17,11 @@
   },
   "devDependencies": {
     "bosonic-test-tools": "*",
-    "grunt-bosonic": ">=0.4.0",
-    "b-collapsible": ">=0.2.2",
-    "b-selectable": ">=0.2.4"
+    "grunt-bosonic": "~0.4.0",
+    "b-collapsible": "~0.2.2",
+    "b-selectable": "~0.2.4"
   },
   "dependencies": {
-    "bosonic": ">=0.4.0"
+    "bosonic": "~0.4.0"
   }
 }
