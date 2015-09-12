@@ -1,7 +1,7 @@
 {
   "name": "b-accordion",
   "version": "0.2.2",
-  "description": "b-accordion has been deprecated. Use bosonic-data-elements instead.",
+  "description": "b-accordion has been deprecated. Use bosonic-core-elements instead.",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
